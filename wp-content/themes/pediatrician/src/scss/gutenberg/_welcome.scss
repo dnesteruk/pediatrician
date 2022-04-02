@@ -1,0 +1,180 @@
+.block-welcome {
+
+  margin-top: 201px;
+  margin-bottom: 200px;
+
+  a {
+    text-decoration: none;
+  }
+
+  .welcome-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .welcome-text {
+    align-self: center;
+  }
+
+  .welcome-title h2 {
+    font-family: "Montserrat-Black", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  .welcome-description {
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .welcome-button {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0;
+
+    &:before {
+      margin-right: 20px;
+    }
+  }
+
+  .welcome-button a {
+    font-family: "Montserrat-SemiBold", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .block-welcome {
+
+    .welcome-image-desktop {
+      display: block;
+    }
+
+    .welcome-image-mobile {
+      display: none;
+    }
+
+    .welcome-title h2 {
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: 0;
+    }
+
+    .welcome-description {
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: 0;
+    }
+
+    .welcome-button {
+      padding-top: 30px;
+    }
+
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+  .block-welcome {
+
+    .welcome-text-wrap {
+      max-width: 500px;
+      margin-left: 50px;
+      margin-top: -26px;
+    }
+
+    .welcome-image {
+      flex: 0 0 40%;
+      max-width: 40%;
+    }
+
+    .welcome-text {
+      flex: 0 0 60%;
+      max-width: 60%;
+    }
+
+  }
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+  .block-welcome {
+    .welcome-container-item {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+
+  .block-welcome {
+    margin-top: 50px;
+    margin-bottom: 134px;
+
+    .welcome-image-desktop {
+      display: none;
+    }
+
+    .welcome-image-mobile {
+      display: block;
+    }
+
+    .welcome-title h2 {
+      font-size: 24px;
+      line-height: 29px;
+      margin-top: 30px;
+      letter-spacing: 0;
+    }
+
+    .welcome-description {
+      font-size: 16px;
+      line-height: 137%;
+      letter-spacing: 0;
+
+      p {
+        margin-top: 21px;
+      }
+    }
+
+    .welcome-button {
+      margin-left: auto;
+      padding-top: 35px;
+
+      &:before {
+        margin-right: 19px;
+      }
+    }
+
+  }
+
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+
+  .block-welcome {
+    .welcome-container {
+      flex-direction: column;
+    }
+
+    .welcome-image img.welcome-image-desktop {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}

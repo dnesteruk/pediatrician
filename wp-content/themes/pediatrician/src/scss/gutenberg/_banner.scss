@@ -1,0 +1,155 @@
+.block-banner {
+
+  .banner-background {
+    width: 100%;
+    height: 791px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .banner-background-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner-subtitle {
+    font-family: "Montserrat-Bold", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  h1.banner-title {
+    font-family: "Montserrat-Black", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  .banner-description {
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .banner-btn-register {
+    display: flex;
+    justify-content: center;
+    margin-top: 39px;
+    letter-spacing: 0;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      height: 50px;
+      left: 625px;
+      top: 308px;
+      background: #323232;
+      color: #FFF;
+      text-decoration: none;
+      font-family: "Montserrat", "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+  .block-banner {
+    .banner-subtitle {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      text-align: center;
+      margin-top: 61px;
+    }
+
+    h1.banner-title {
+      font-size: 64px;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: 0.1px;
+      margin-top: 20px;
+      margin-bottom: 0;
+      padding: 0 30px;
+    }
+
+    .banner-description {
+      font-size: 18px;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: 0;
+      margin-top: 20px;
+      width: 500px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+
+  .block-banner {
+
+    .banner-background {
+      width: 100%;
+      height: 677px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banner-subtitle {
+      font-size: 14px;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      text-align: left;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    h1.banner-title {
+      font-size: 48px;
+      line-height: 140%;
+      text-align: left;
+      letter-spacing: 0.1px;
+      margin-top: 21px;
+      margin-left: 20px;
+      margin-bottom: 0;
+    }
+
+    .banner-description {
+      font-size: 16px;
+      line-height: 140%;
+      color: #606060;
+      text-align: left;
+      letter-spacing: 0;
+      margin-top: 19px;
+      margin-left: 20px;
+      width: 313px;
+    }
+
+    .banner-btn-register {
+      margin-top: 28px;
+
+      a {
+        width: 335px;
+      }
+    }
+
+  }
+}

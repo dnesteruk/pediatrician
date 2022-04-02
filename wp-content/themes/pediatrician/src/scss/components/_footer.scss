@@ -1,0 +1,189 @@
+.footer-container {
+  background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .footer-container-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1070px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 20px;
+  }
+
+  .footer-navigation {
+    flex: 1 1 auto;
+  }
+
+  ul.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 468px;
+    margin-right: auto;
+    margin-left: auto;
+
+    a {
+      font-family: "Montserrat-SemiBold", "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 28px;
+      letter-spacing: 0;
+    }
+
+  }
+
+  .footer-container-register {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat-SemiBold", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #323232;
+
+    &:before {
+      margin-right: 20px;
+    }
+
+    a {
+      letter-spacing: 0;
+    }
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+  .footer-container {
+    height: 300px;
+    padding-top: 53px;
+
+    ul.footer-menu {
+
+      a {
+        margin-right: 50px;
+      }
+
+    }
+
+    .footer-container-register {
+      margin-right: 17px;
+      margin-bottom: 5px;
+
+      &:before {
+        margin-top: -1px;
+      }
+    }
+
+    .footer-copyright {
+      margin-top: 95px;
+      text-align: center;
+    }
+  }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+  .footer-container {
+    ul.footer-menu {
+      margin-top: 10px;
+      padding-left: 30px
+    }
+  }
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+  .footer-container {
+    .footer-logo {
+      margin-left: -15px;
+      margin-top: -5px;
+    }
+  }
+
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+
+  .footer-container {
+    min-height: 300px;
+    height: 100%;
+
+    .footer-container-navigation {
+      flex-direction: column;
+    }
+  }
+
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+
+  .footer-container {
+    padding-top: 40px;
+    padding-bottom: 34px;
+
+    .footer-container-navigation {
+      flex-direction: column;
+    }
+
+    ul.footer-menu {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      margin: 28px 0 28px 0;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 11px;
+      }
+    }
+
+    .footer-container-register {
+      margin-right: 30px;
+
+      a {
+        margin-top: 2px;
+      }
+    }
+
+    .footer-copyright {
+      margin-top: 39px;
+    }
+  }
+
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+
+  .footer-container {
+    ul.footer-menu {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+}

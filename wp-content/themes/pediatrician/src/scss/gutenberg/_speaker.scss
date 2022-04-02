@@ -1,0 +1,146 @@
+.block-speaker {
+
+  .speaker-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .speaker-description {
+    max-width: 470px;
+    font-size: 16px;
+    line-height: 140%;
+
+    p {
+      margin: 0;
+    }
+
+  }
+
+  .speaker-image {
+
+  }
+
+  .speaker-sessions ul {
+    padding-left: 0;
+
+    li {
+      list-style: none;
+    }
+
+    h3 {
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  h2.speaker-sessions-title {
+    font-family: "Montserrat-Black", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .speaker-sessions h3 {
+    font-family: "Montserrat-SemiBold", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+  }
+
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+  .speaker-image {
+    order: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+  .block-speaker {
+
+    .speaker-description {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .speaker-photo {
+      flex: 0 0 50%;
+      max-width: 50%;
+      text-align: right;
+    }
+
+    .speaker-image {
+      max-width: 250px;
+      margin-top: -50px;
+      width: auto;
+      height: auto;
+    }
+
+    h2.speaker-sessions-title {
+      margin: 50px 0;
+    }
+
+  }
+
+}
+
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+
+  .block-speaker {
+    .speaker-photo {
+      height: 250px;
+      overflow: hidden;
+    }
+
+    .speaker-image {
+      width: 100%;
+    }
+  }
+
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+
+  .block-speaker {
+
+    .speaker-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .speaker-post-title_mobile {
+      order: 1;
+    }
+
+    .speaker-description {
+      order: 2;
+    }
+
+    .speaker-image {
+      order: 0;
+    }
+
+    h2.speaker-sessions-title {
+      margin-top: 100px;
+      margin-bottom: 40px;
+    }
+
+  }
+
+}

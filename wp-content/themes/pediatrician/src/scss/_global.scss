@@ -1,0 +1,148 @@
+html {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-weight: 400;
+  background-color: #fff;
+  color: #323232;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body, html {
+  height: 100%;
+}
+
+body main {
+  flex: 1 1 auto; //flex-grow, flex-shrink, flex-basis
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+a {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-style: normal;
+  color: #323232;
+}
+
+a:hover {
+  color: #323232;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+.color-string {
+  color: #28b7ca;
+}
+
+.container-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .container-wrapper-sm {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+  .container-wrapper, .container-wrapper-sm {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+// XX-Large devices (larger desktops, 1500px and up)
+@media (min-width: 1500px) {
+  .container-wrapper, .container-wrapper-sm {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+
+}
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1499px) {
+
+}

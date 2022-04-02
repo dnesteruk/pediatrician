@@ -1,0 +1,68 @@
+.menu-current-lang {
+  &:after {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 7px;
+    background-image: url('../images/language-switcher.svg');
+    background-repeat: no-repeat;
+    background-size: 10px 7px ;
+    padding-top: 1px;
+  }
+}
+
+.flag-ch .speaker-item-content {
+  &:before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/speaker-flag-for-switzerland.svg');
+    background-repeat: no-repeat;
+    background-size: 16px 16px ;
+  }
+}
+
+.flag-de .speaker-item-content {
+  &:before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/speaker-flag-for-germany.svg');
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+  }
+}
+
+.header-mobile-navigation {
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 22px;
+  background-image: url('../images/menu-hamburger.svg');
+  background-repeat: no-repeat;
+  background-size: 30px 22px;
+}
+
+.header-mobile-navigation.show-menu {
+  display: inline-block;
+  content: "";
+  width: 26px;
+  height: 25px;
+  background-image: url('../images/menu-close.svg');
+  background-repeat: no-repeat;
+  background-size: 26px 25px;
+}
+
+.footer-container-register, .welcome-button, .speaker-post-contact {
+  &:before {
+    display: inline-block;
+    content: "";
+    width: 37px;
+    height: 36px;
+    background-image: url('../images/arrow-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 37px 36px;
+  }
+}
